@@ -1,0 +1,61 @@
+                                                   "Ball.java"
+                                                      
+package com.company;
+
+public class Ball
+{
+    int Radius;
+    String Color;
+    String Material;
+
+    public String toString()
+    {
+        return Radius + Color + Material;
+    }
+
+    public Ball (int Radius, String Color, String Material)
+    {
+        this.Radius = Radius;
+        this.Color = Color;
+        this.Material = Material;
+    }
+}
+
+                                                     "Book.java"
+                                                     
+ package com.company;
+
+public class Book {
+
+    String Author;
+    String Name;
+    String Color;
+
+    public String toString ()
+    {
+        return Author + Name + Color;
+    }
+
+    public Book(String Author, String Name, String Color)
+    {
+        this.Author = Author;
+        this.Name = Name;
+        this.Color = Color;
+    }
+}
+
+                                                      "Main.java"
+                                                      
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args)
+    {
+        Book book = new Book("Alexandr Pyshkin ", " Captain daughter ", " Blue ");
+        System.out.println(book.toString());
+
+        Ball ball = new Ball(2, "  Green ", " leather ");
+        System.out.println(ball.toString());
+    }
+}
